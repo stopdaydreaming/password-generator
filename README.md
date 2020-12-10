@@ -46,6 +46,13 @@ None at this time
 None at this time
 
 ## Tests
-None at this time
+None at this time  
 
 ## Badges
+![badmath](https://img.shields.io/github/issues/stopdaydreaming/password-generator)  
+![badmath](https://img.shields.io/github/forks/stopdaydreaming/password-generator)  
+![badmath](https://img.shields.io/github/stars/stopdaydreaming/password-generator)  
+![badmath](https://img.shields.io/badge/license-MIT-green)  
+![badmath](https://img.shields.io/badge/HTML-15.3%25-green)  
+![badmath](https://img.shields.io/badge/CSS-33.8%25-blue)  
+![badmath](https://img.shields.io/badge/JS-50.9%25-red) 
