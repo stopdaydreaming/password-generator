@@ -25,7 +25,7 @@ An employee with access to sensitive data wants to randomly generate a password 
 
 ## Usage 
 This code should be used for the purpose of creating/editing code for a password generator.
-![portfolio](./assets/images/screenshot.png)
+![password generator](screenshot.png)
 
 ## View Website
 Click here to view the live website [VIEW SITE](https://stopdaydreaming.github.io/password-generator/)
