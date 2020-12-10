@@ -33,6 +33,7 @@ Click here to view the live website [VIEW SITE](https://stopdaydreaming.github.i
 
 ## Credits
 1 contributor: @stopdaydreaming
+Special thanks to Pete K for his help in the late night study groups
 
 ## License
 Copyright (c) Password Generator. All rights reserved.

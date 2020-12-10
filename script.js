@@ -13,8 +13,51 @@ function writePassword() {
 function generatePassword(){
 
   //build here: logic, prompts, confirms and temporary password
+  var generatePassword = "";
 
-  return "temporary password";
+  var lowerCase = "abcdefghijklmnopqrstuvwxyz";
+  var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  var numericChars = "0123456789";
+  var specialChars = "!@#$%^&*()";
+
+  var reqCharString = "";
+
+  var passwordLength = prompt("how any characters would you like in your password? must be between 8-128 characters");
+
+  while(passwordLength < 8 || passwordLength >128) {
+    passwordLength = prompt("the password must be between 8-128 characters");
+  }
+
+  // confirm lowercase
+  var includeLowerCase = confirm("do you want to include lowercase characters");
+  if(includeLowerCase){
+    reqCharString = reqCharString.concat(lowerCase);
+  }
+
+  // confirm uppercase
+  var includeUpperCase = confirm("do you want to include uppercase characters");
+  if(includeUpperCase){
+    reqCharString = reqCharString.concat(upperCase);
+  }
+
+  // confirm number
+  var includeNumeric = confirm("do you want to include numeric characters");
+  if(includeNumeric){
+    reqCharString = reqCharString.concat(numericChars);
+  }
+
+    // confirm special characters
+    var includeSpecialChars = confirm("do you want to include special chars characters");
+    if(includeSpecialChars){
+      reqCharString = reqCharString.concat(specialChars);
+    }
+
+  for(var i = 0; i < passwordLength; i++){
+    var rand = Math.floor(Math.random() * reqCharString.length);
+    generatePassword = generatePassword.concat(reqCharString.charAt(rand));
+
+  }
+  return generatePassword;
 }
 
 // Add event listener to generate button
@@ -35,3 +78,12 @@ generateBtn.addEventListener("click", writePassword);
 // THEN a password is generated that matches the selected criteria
 // WHEN the password is generated
 // THEN the password is either displayed in an alert or written to the page
+
+// ## pseudocode here ##
+// length of the password between 8 - 128 chars
+// password allows lowercase, uppercase, numeric, and/or special characters
+// validate character type
+// regex for uppercase letters = /[A-Z]/g
+// regex for lowercase letters = /[a-z]/g
+// regex for numbers = /[0-9]/g
+// regex for special characters = /(.*[!,@,#,$,%,^,&,*,?,_,~])/
