@@ -37,32 +37,32 @@ function generatePassword(){
 
   var reqCharString = "";
 
-  var passwordLength = prompt("how any characters would you like in your password? must be between 8-128 characters");
+  var passwordLength = prompt("how any characters would you like in your password? must be between 8-128 characters?");
 
   while(passwordLength < 8 || passwordLength >128) {
     passwordLength = prompt("the password must be between 8-128 characters");
   }
 
   // confirm lowercase
-  var includeLowerCase = confirm("do you want to include lowercase characters");
+  var includeLowerCase = confirm("do you want to include lowercase characters?");
   if(includeLowerCase){
     reqCharString = reqCharString.concat(lowerCase);
   }
 
   // confirm uppercase
-  var includeUpperCase = confirm("do you want to include uppercase characters");
+  var includeUpperCase = confirm("do you want to include uppercase characters?");
   if(includeUpperCase){
     reqCharString = reqCharString.concat(upperCase);
   }
 
   // confirm number
-  var includeNumeric = confirm("do you want to include numeric characters");
+  var includeNumeric = confirm("do you want to include numeric characters?");
   if(includeNumeric){
     reqCharString = reqCharString.concat(numericChars);
   }
 
     // confirm special characters
-    var includeSpecialChars = confirm("do you want to include special chars characters");
+    var includeSpecialChars = confirm("do you want to include special chars characters?");
     if(includeSpecialChars){
       reqCharString = reqCharString.concat(specialChars);
     }
