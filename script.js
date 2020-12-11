@@ -33,7 +33,7 @@ function generatePassword(){
   var lowerCase = "abcdefghijklmnopqrstuvwxyz";
   var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   var numericChars = "0123456789";
-  var specialChars = "!@#$%^&*()";
+  var specialChars = "!@#$%^&*()+={}[]?<>";
 
   var reqCharString = "";
 
