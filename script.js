@@ -16,6 +16,8 @@
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
+// copy password to clipboard
+var copyPswd = document.getElementById("copy-pswd");
 
 // Write password to the #password input
 function writePassword() {
@@ -75,5 +77,12 @@ function generatePassword(){
   return generatePassword;
 }
 
+function copyPassword(){
+  password.select();
+  document.execCommand("Copy");
+}
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+copyPswd.addEventListener("click", copyPassword);
