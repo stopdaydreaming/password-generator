@@ -16,8 +16,9 @@
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-// copy password to clipboard
+// copy password to clipboard 
 var copyPswd = document.getElementById("copy-pswd");
+copyPswd.style.display = "none";
 
 // Write password to the #password input
 function writePassword() {
@@ -25,6 +26,8 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
+  
+  copyPswd.style.display = "block";
 }
 
 function generatePassword(){
